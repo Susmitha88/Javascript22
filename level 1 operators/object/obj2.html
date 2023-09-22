@@ -1,0 +1,102 @@
+<html>
+    <body></body>
+    <body>
+        <script>
+             var marks = {
+                            "maths" : 34,
+                            "english" : 56,
+                            "science": 32,
+                            "hindi" : 75,
+                            "social science": 65
+                            };
+                            // 1 Print the marks of all the subjects.
+                                for(var sub in marks){
+                                console.log(marks[sub]);
+                             }
+                            // 2 Print the names of all the subjects from the given object.
+                                for(var sub in marks){
+                                console.log(sub);
+                             }
+                            // 3 Count the number of subjects from the given object.
+                             var num=0
+                            for(var sub in marks){
+                                num=num+1
+                                console.log(num);
+                            }
+                            // 4 Print the percentage of the marks of the student.
+                             var totalmarks=0;
+                            for(var sub in marks){
+                                total=totalmarks
+                                var percentage=(500*500)/100
+                                console.log(totalmarks)
+                            }
+                            // 5 Print only those subjects where the student scored more than 35.
+                            for(var sub in marks){
+                                if(marks[sub]>35){
+                                    console.log(sub);
+                                }
+                            }
+                            // 6 Print the pass/fail status of the subjects provided 35 is the pass mark.
+                             var passmarks=35;
+                            for(var sub in marks){
+                                if(marks[sub]<35){
+                                    console.log("fail")
+                                }
+                                else{
+                                    console.log("pass")
+                               }
+                            }
+                            // 7 Print only the passed subje
+                             for(var sub in marks){
+                                if(marks[sub]>=35){
+                                    console.log(sub);
+                                }
+                            }
+                            // 8 Count the number of passed subjects.
+                            var count=0
+                            for(var sub in marks){
+                                if(marks[sub]>=35){
+                                    console.log(sub);
+                                }
+                            }
+                            // 9 Print only the failed subjects.
+                            for(var sub in marks){
+                                if(marks[sub]<35){
+                                    console.log(sub);
+                                }
+                            }
+                            // 10. Count the number of failed subjects.
+                              var failcount=0;
+                             for(var sub in marks){
+                                if(marks[sub]<35){
+                                    failcount=failcount+1
+                                }
+                            }
+                            console.log(failcount)
+                            // 13.Check whether the student has passed in all the subjects or not.
+                             var sumofsub=0;
+                             for(var sub in marks){
+                                sumofsub=sumofsub+1;
+                             }
+                             let passedsub=0
+                             for(var sub in marks){
+                                 if(marks[sub]>=35){
+                                    passedsub=passedsub+1
+                                 }
+                             }
+                             console.log(passedsub)
+                             //14.Take the subject name from the student through prompt box and print the subject marks and pass/fail status.
+                               var sub=prompt("enter the sub name:").tolowercase();
+                               if(marks.hasownpropert(sub)){
+                                var submarks=marks[sub];
+                                var passthreshold=40%;
+                                var status=submarks>=passthreshold ?"pass":"fail"
+                                console.log(pass/fail status:$(statuts))
+                               }
+                               else{
+                                console.log(sub)
+                               }
+
+        </script>
+    </body>
+</html>

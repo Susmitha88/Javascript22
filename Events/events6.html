@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <style>
+            .card{
+                height: 100px;
+                width: 200px;
+                border: 2px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: azure;
+            }
+        </style>
+        <div class="card"id="card1"></div>
+        <script>
+            var
+            card1=document.getElementById("card1");
+            //var
+            spanEl=document.getElementById("spanE1");
+            var spanEl=document.createElement("span");
+            card1.appendChild(spanEl);
+            var isClicked=false;
+            spanEl.innerHTML="OFF";
+            card1.onclick=function(){
+               console.log("hello");
+               isClicked=!isClicked;
+               if(isClicked===true){
+                spanEl.innerHTML="ON";
+               }
+               else{
+                spanEl.innerHTML="OFF";
+               }
+            }
+       </script>
+    </body>
+</html>

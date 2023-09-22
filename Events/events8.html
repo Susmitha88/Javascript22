@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>like and dislike button</title>
+    </head>
+    <body>
+        <button id="likeButton">Like</button>
+        <span id="likeCount">0</span>
+        
+        <button id="dislikeButton">Dislike</button>
+        <span id="dislikeCount">0</span>
+    
+      <script>
+           let likeCount = 0;
+            let dislikeCount = 0;
+           const likeButton = document.getElementById("likeButton");
+           const dislikeButton = document.getElementById("dislikeButton");
+           const likeCountElement = document.getElementById("likeCount");
+           const dislikeCountElement = document.getElementById("dislikeCount");
+           likeButton.addEventListener("click", function() {
+            likeCount++;
+            likeCountElement.textContent = likeCount;
+           });
+           dislikeButton.addEventListener("click", function() {
+            dislikeCount++;
+            dislikeCountElement.textContent = dislikeCount;
+           });
+  
+
+        </script>
+    </body>
+</html>

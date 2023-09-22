@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function fact(a){
+                if(a===0||a===1){
+                    return 1;
+                }
+                else{
+                    return a*fact(a-1);
+                }
+            }
+            var factorial =fact(4);
+            console.log(factorial);
+        </script>
+    </body>
+</html>

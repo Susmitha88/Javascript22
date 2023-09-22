@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Background Color</title>
+        <style>
+            .color-box{
+                width:200px ;
+                height: 200px;
+                background-color: #cccccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="color-box" id="mybox"></div>
+        <button onclick="changecolor()">on</button>
+        <button onclick="changecolor()">off</button>
+        <script>
+            function changecolor(){
+                var box=document.getElementById("mybox");
+                var Color=["red","green","blue","yellow"];
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                box.style.backgroundColor = randomColor;
+            }
+
+        </script>
+    </body>
+</html>

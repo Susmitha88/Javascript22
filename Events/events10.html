@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Toggle Background Color</title> 
+        <style>
+           body {
+             font-family: Arial, sans-serif;
+             text-align: center;
+             }
+             #container {
+             margin: 100px auto;
+             width: 500px;
+             padding: 100px;
+             background-color: #fff; 
+             transition: background-color 0.3s ease-in-out;
+            }  
+        </style>
+    </head>
+    <body>
+        <div id="container">
+           <button id="toggleButton">Toggle </button>
+        </div>
+        <script>
+             const container = document.getElementById('container');
+              const toggleButton = document.getElementById('toggleButton');
+             let isColorChanged = false;
+
+            toggleButton.addEventListener('click', () => {
+            if (isColorChanged) {
+             container.style.backgroundColor = '#fff'; 
+            }
+            else {
+            container.style.backgroundColor = '#3498db'; 
+            }
+           isColorChanged = !isColorChanged; 
+           });
+       </script>
+    </body>
+</html>

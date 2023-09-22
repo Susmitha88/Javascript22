@@ -1,0 +1,70 @@
+<html>
+    <head></head>
+    <body>
+        <div style="border:5px solid red">
+            <ul></ul>
+        </div>
+        <script>
+             var students = [
+                                {
+                                name:'jaya',
+                                gender:'female',
+                                place:'gachibowli',
+                                },
+                                {
+                                name:'dasu',
+                                gender:'male',
+                                place:'kphb'
+                                },
+                                {
+                                name:'swati',
+                                gender:'female',
+                                place:'pune'
+                                },
+                                {
+                                name:'pallavi',
+                                gender:'female',
+                                place:'assam'
+                                },
+                                {
+                                name:'kiran',
+                                gender:'male',
+                                place:'kondapur'
+                                },
+                                {
+                                name:'thirumala',
+                                gender:'male',
+                                place:'madhapur'
+                                },
+                                {
+                                name:'priya',
+                                gender:'female',
+                                place:'hitech'
+                                },
+                            ]
+                             var list=document.querySelector("ul")
+                             students.forEach(function(a){
+                             var li1=document.createElement("li") 
+                             li1.innerHTML=a.name
+                             list.appendChild(li1)
+                             var ul=document.createElement("ul")
+                             var li2=document.createElement("li")
+                             var li3=document.createElement("li")
+                             li2.innerHTML=a.gender
+                             li3.innerHTML=a.place
+                             ul.appendChild(li2)
+                             ul.appendChild(li3)
+                             list.appendChild(li2)
+                             if(a.gender==="male")
+                             {
+                                li1.style.backgroundColor="skyblue"
+                                ul.style.backgroundColor="skybule"
+                             }
+                             else{
+                                li1.style.backgroundColor="pink"
+                                ul.backgroundColor="pink"
+                             }
+                             })
+        </script>
+    </body>
+</html>

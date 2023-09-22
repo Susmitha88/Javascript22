@@ -1,0 +1,112 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+        // 1.For the Given array: [23,34,54,10,4,7] print the minimum number in an Array. 
+        var arr=[23,34,54,10,4,7] 
+        let min=arr[0];
+        arr.forEach(function(a){
+            if(min>a){
+                min=a;
+                console.log(min);
+            }
+        });
+        //2.For the Given array: [23,34,54,10,4,7] print the Maximum number in an array.
+        var arr=[23,34,54,10,4,7] 
+        let max=arr[0];
+        arr.forEach(function(a){
+            if(a>max){
+                max=a;
+                console.log(max);
+            }
+        }); 
+        //3.For the Given array: [23,34,54,10,4,7] sum of all the numbers in an Array
+         var arr=[23,34,54,10,4,7]
+         let sum=0;
+         arr.forEach(function(a){
+            sum=sum+a;
+            console.log(a);
+         });
+        //4.For the Given array: [23,34,54,10,4,7] Average of all the numbers in an Array. 
+         let total=0;
+         arr.forEach(function(a){
+            total=total+a;
+            console.log(total/arr.length);
+         });
+        //5.For the Given array: [23,34,54,10,4,7] search if the given number is there in an array or not. Given number: 34 
+          let givennumber=+prompt()
+         arr.forEach(function(a){
+           if(a===givennumber){
+            console.log("true");
+           }
+           else{
+            console.log("false");
+           }
+         });
+        //6.For the Given array: [23,34,54,10,34,7,23,10,34] print the total number of times an element found in the array. Given number: 23
+          var givenNumber=23;
+         let count=0;
+         arr.forEach(function(a){
+            if(arr===givenNumber){
+                count++;
+            }
+            console.log(count)
+         });
+        //7.For the Given array: [23,34,54,10,4,7] print index of a given element in an Array. Given number: 23
+         var arr= [23,34,54,10,4,7]
+          num=54
+          var b=  arr.forEach(function(arr,b){
+            if(num===arr){
+                console.log(b);
+            }
+          });
+        //8.a program to store an array into another array var ar = [23,34,54,10,4,7] var br = [ ] 
+         var ar=[23,34,54,10,4,7]
+         var br=[]
+         arr.forEach(function(a){
+            br.push(a);
+            console.log("br=",br)
+         });
+        //9.Sort an array in ascending order. Given array: [23,34,54,10,4,7] 
+          var arr=[23,34,54,10,4,7]
+          let sort=[]
+       // 10.store only even numbers of a given array in another array.
+          let evenarr=[]
+          arr.forEach(function(a){
+            if(a%2===0){
+                evenarr.push(a)
+             }
+             console.log(evenarr);
+          });
+        //11.print only the perfect squares in an array
+            function perfectSquare(a)
+              
+            
+           arr.forEach(function(a){
+            
+             if(perfectSquare(a)) {
+              console.log(a);
+             }  
+            
+           });
+       //12.Given two arrays. Compare the arrays and print the element which is not there in array 2.
+           
+          var array1=prompt();
+          var array2=prompt();
+          array.forEach(function(Element){
+            if(array.includes(Element)){
+              console.log(Element);
+            }
+          });
+      
+
+
+          
+
+
+
+          
+
+        </script>
+    </body>
+</html>

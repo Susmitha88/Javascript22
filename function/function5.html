@@ -1,0 +1,16 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function reverseNumber(a){
+                var numString=a.toString();
+                var reversedString=numString.split('').reverse().join('');
+                var reverseNumber=parseInt(reversedString);
+                return reverseNumber;
+            }
+            var num=12345;
+            var reversed=reverseNumber(num);
+            console.log(reversed);
+        </script>
+    </body>
+</html>

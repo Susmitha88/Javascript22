@@ -1,0 +1,116 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+         //1. Create one h1 element and put some text into it.
+            var h1Element=document.createElement("h1");
+            h1Element.innerHTML="Hello Dom World!"
+            document.body.appendChild(h1Element);
+         //Create one h1 element,put some text into it and apply red font color to it
+         var h1ElementTwo=document.createElement("h1");
+         h1ElementTwo.textContent="HELLO DOM WORLD!";
+         h1ElementTwo.style.color="red";
+         document.body.appendChild(h1ElementTwo)
+         //3. Take an array of names and create a list from it.
+          let u1Element=document.createElement("u1");
+          document.body.appendChild(u1Element)
+          let names=["ramesh","suresh","praveen","gopi","sunil"]
+          names.forEach(function(name){
+            let liElement=document.createElement("li");
+            liElement.innerHTML=name;
+            console.log(liElement);
+            u1Element.appendChild(liElement)
+          });
+          //4. Take an array of numbers and create a list from it.
+          var ulElement=document.createElement("ul");
+          document.body.appendChild(ulElement)
+          for(let i=11;i<=17;i++){
+            let liElement=document.createElement("li");
+            ulElement.innerHTML=i;
+            ul.appendChild(liElement)
+          }
+          //5.. Take an array of objects and create a table form it
+          let data=[{
+                name:"praveen",
+                age:36,
+                Gender:"male",
+                Salary:10000,
+                City:"hyd"
+              },
+              {
+                name:"praveen",
+                age:36,
+                Gender:"male",
+                Salary:10000,
+                City:"hyd"
+              },
+              {
+                name:"praveen",
+                age:36,
+                Gender:"male",
+                Salary:10000,
+                City:"hyd"
+              },
+              {
+                name:"praveen",
+                age:36,
+                Gender:"male",
+                Salary:10000,
+                City:"hyd"
+              },
+              {
+                name:"praveen",
+                age:36,
+                Gender:"male",
+                Salary:10000,
+                City:"hyd"
+              },
+              {
+                name:"praveen",
+                age:36,
+                Gender:"male",
+                Salary:10000,
+                City:"hyd"
+              }
+            ];
+            let table = document.createElement("table");
+            var tableElement = document.getElementById('tableEl')
+            table.style.border = '2px solid black'
+            
+            let row = document.createElement("tr");
+            for (let key in data[0]) {
+                let th = document.createElement("th");
+                th.textContent = key;
+                row.appendChild(th);
+            }
+            table.appendChild(row);
+            data.forEach(function(item) {
+                let  row = document.createElement("tr");
+                for (let key in item) {
+                   let cell = document.createElement("td");       
+                   cell.textContent = item[key];
+                   row.appendChild(cell);
+                }
+            table.appendChild(row);
+            });
+
+            document.body.appendChild(table);
+            document.body.appendChild(tableElement)
+          // 6. Take an array of image urls and display the images in browser.
+          let arr=[
+            ' https://www.housebeautiful.com/lifestyle/gardening/g13074130/beautiful-flower-images/#sidepanel'
+            ' https://www.housebeautiful.com/lifestyle/gardening/g13074130/beautiful-flower-images/#sidepanel'
+            ' https://www.housebeautiful.com/lifestyle/gardening/g13074130/beautiful-flower-images/#sidepanel'
+          ];
+          var container=document.createElement("div");
+          arr.forEach(function(url){
+            let img=document.createElement("img");
+            container.src=url;
+            div.appendChild(url)
+
+
+          })
+            
+        </script>
+    </body>
+</html>

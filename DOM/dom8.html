@@ -1,0 +1,83 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            people = [
+                        {
+                        "firstname": "praveen",
+                        "lastname": "gubbala",
+                        "age": 36,
+                        "gender": "male",
+                        "city": "hyd",
+                        "salary": 10000
+                        },
+                        {
+                        "firstname": "srikanth",
+                        "lastname": "gubbala",
+                        "age": 32,
+                        "gender": "male",
+                        "city": "bengaluru",
+                        "salary": 20000
+                        },
+                        {
+                        "firstname": "pradeep",
+                        "lastname": "reddy",
+                        "age": 21,
+                        "gender": "male",
+                        "city": "hyd",
+                        "salary": 25000
+                        },
+                        {
+                        "firstname": "mounika",
+                        "lastname": "mudiraj",
+                        "age": 20,
+                        "gender": "female",
+                        "city": "nalgonda",
+                        "salary": 30000
+                        },
+                        {
+                        "firstname": "nikhil",
+                        "lastname": "m",
+                        "age": 22,
+                        "gender": "male",
+                        "city": "guntur",
+                        "salary": 2000
+                        },
+                        {
+                        "firstname": "riya",
+                        "lastname": "bhadouria",
+                        "age": 14,
+                        "gender": "female",
+                        "city": "indore",
+                        "salary": 40000
+                        }
+                        ];
+                        //Display all the people's data in a table.
+                          let table=document.createElement("table")
+                          pepole.forEach(function(a){
+                           
+                            tr=document.createElement("tr");
+                            td1=document.createElement("td1");
+                            td2=document.createElement("td2");
+                            td3=document.createElement("td3");
+                            td4=document.createElement("td4");
+                            td5=document.createElement("td5");
+                            td6=document.createElement("td6");
+                            td1.innerHTML=a.firstname;
+                            td2.innerHTML=a.lastname;
+                            td3.innerHTML=a.age;
+                            td4.innerHTML=a.gender;
+                            td5.innerHTML=a.city;
+                            td6.innerHTML=a.salary;
+                            tr.appendchild(td1);
+                            tr.appendchild(td2);
+                            tr.appendchild(td3);
+                            tr.appendchild(td4);
+                            tr.appendchild(td5);
+                            tr.appendchild(td6);
+                            table.appendchild(tr)
+                          })
+                           
+        </script>
+    </body>
+</html> 

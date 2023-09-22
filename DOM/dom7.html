@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <body>
+        <ol id="type"></ol>
+        <script>
+             var students = [		
+                                    {
+                                        "firstname": "praveen",
+                                        "age": 36,
+                                        "subjects":['angular','nodejs','reactjs','java']
+                                    }, 
+                                    {
+                                        "firstname": "srikanth",
+                                        "age": 32,
+                                        "subjects":['react','mongodb']
+                                    }, 
+                                    {
+                                        "firstname": "pradeep",
+                                        "age": 21,
+                                        "subjects":['express','mongoose','python']
+                                    }
+                            ]
+                              let oLiElement1=document.getElementById("orderedlist")
+                              students.forEach(function(a){
+                                let il1=document.createElement("li")
+                                li1.innerHTML=a.firstname;
+                                let oLiElement.appendChild(oLiElement2);
+                                students.forEach(function(a,b){
+                                    let li2=document.createElement("li")
+                                    li2.innerHTML=a.subjects[b];
+                                    oLiElement2.appendChild(li2);
+                                    oLiElement1.appendChild(oLiElement2)
+                                    document.body.appendChild(oLiElement1)
+
+                                })
+                              })
+        </script>
+    </body>
+</html>

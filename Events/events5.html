@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>toggle true/flase</title>
+    </head>
+    <body>
+        <button id="toggleButton">toggle</button>
+        
+        <script>
+            let isbooleantrue=false;
+            function toggleanddisplay(){
+                isbooleantrue=!isbooleantrue;
+                document.getElementById("booleanstatus").textContent=isbooleantrue.tostring();
+            }
+            document.getElementById("togglebutton").addeventlistener("click",toggleanddisplay);
+
+        </script>
+    </body>
+</html>

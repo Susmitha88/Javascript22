@@ -1,0 +1,114 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //For the Given array: [23,34,54,0,4,7] print all the Array values using a for loop
+            var arr=[23,34,54,0,4,7]
+            arr.forEach(function(a){
+                console.log(a);
+            });
+                
+           // print all numbers in an array except the first element
+           var arr=[23,34,54,0,4,7]
+           arr.forEach(function(a,b){
+            if(arr[b]!==0){
+                console.log(a)
+            }
+           }) ;
+           //print all numbers in an array except the first element.
+             arr.forEach(function(a,b){
+                if(b<arr.length-1){
+                    console.log(a)
+                }
+             });
+             //Print all elements in an array except the last element
+             arr.forEach(function(a,b){
+                if(arr[arr.length-1]){
+                    console.log(a)
+                }
+             });
+             //Print all the numbers from last index to first index 
+             arr.forEach(function(a,b){
+                console.log(arr[arr.length-1]-b)
+             });
+             //Print all the numbers from last index to first index
+                arr.forEach(function(a,b){
+                  var  reverse=arr.splice().reverse();
+                    if(b!==0){
+                        console.log(a)
+                       
+                    }
+                });
+                //Print all the numbers from last index to first index except the last element
+                var reversed=arr.splice().reverse();
+                reversed.forEach(function(a,b){
+                    if(b!==arr.length-1){
+                        console.log(a);
+                    }
+                });
+                //Print only the last 4 elements of an array. 
+                arr.forEach(function(a,i){
+                    if(i>=2){
+                        console.log (a) 
+                    }
+                    
+                });
+                //For the Given array: [23,34,54,10,4,7] print values that are greater than the given number. Given number: 20
+                var arr=[23,34,54,0,4,7] 
+                arr.forEach(function(a){
+                    if(a>20){
+                        console.log(a)
+                    }
+                });
+                //For the Given array: [23,34,54,10,4,7] print all the even numbers in an Array. 
+                arr.forEach(function(a){
+                    if(a%2==0){
+                        console.log(a)
+                    }
+                });
+                //For the Given array: [23,34,54,10,4,7] print all the even numbers in an Array. 
+                arr.forEach(function(a){
+                    if(a%2==1){
+                        console.log(a)
+                    }
+                });
+                //For the Given array: [23,-34,-54,10,-4,7] print all the positive numbers in an array
+                var arr=[23,-34,-54,10,-4,7]
+                arr.forEach(function(a){
+                    if(a>0){
+                        console.log(a)
+                    }
+                });
+                //Print only the 2 digit numbers from an array
+                arr.forEach(function(a){
+                    if(a>10 && a<99){
+                        console.log(a);
+                    }
+                });
+                //Print only multiples of 5 from an array
+                arr.forEach(function(a){
+                    if(a%5===0){
+                        console.log(a)
+                    }
+                });
+                //Print only multiples of 2 AND 3 from an array
+                arr.forEach(function(a){
+                    if(a%2===0 && a%3===0 ){
+                        console.log(a);
+                    }
+
+                });
+                //Print only multiples of 3 OR 5 from an array
+                  arr.forEach(function(a){
+                    if(a%5===0){
+                        console.log(a);
+                    }
+                  });
+
+
+
+
+
+        </script>
+    </body>
+</html>
